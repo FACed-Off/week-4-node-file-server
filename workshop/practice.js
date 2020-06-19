@@ -1,5 +1,6 @@
 const fs = require("fs");
+const path = require("path");
 
-fs.readFile("workshop/test.txt", "utf-8", (error, file) => {
+fs.readFile(path.join(__dirname, "test.txt"), (error, file) => {
   console.log(file);
 });
